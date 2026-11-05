@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">进度条</string>
+
+    <string name="btn_add">+ 新建</string>
+    <string name="btn_sync_settings">同步设置</string>
+    <string name="btn_sync_now">立即同步</string>
+    <string name="btn_minus">-1</string>
+    <string name="btn_plus">+1</string>
+    <string name="btn_edit">编辑</string>
+    <string name="btn_delete">删除</string>
+
+    <string name="empty_hint">还没有进度条，点「+ 新建」开始吧</string>
+
+    <string name="theme_stairs">台阶</string>
+    <string name="theme_metro">站点</string>
+    <string name="theme_dots">圆点</string>
+
+    <string name="dialog_add_title">新建进度条</string>
+    <string name="dialog_edit_title">修改进度条</string>
+    <string name="dialog_delete_title">删除进度条</string>
+    <string name="dialog_delete_msg">确定删除「%1$s」吗？</string>
+    <string name="dialog_name_hint">名字（如：爬山）</string>
+    <string name="dialog_total_hint">总格数（如：20）</string>
+    <string name="dialog_theme_label">主题</string>
+    <string name="dialog_sync_title">同步设置（坚果云 WebDAV）</string>
+    <string name="dialog_url_hint">WebDAV 地址</string>
+    <string name="dialog_user_hint">账号</string>
+    <string name="dialog_pass_hint">应用密码</string>
+
+    <string name="btn_ok">保存</string>
+    <string name="btn_cancel">取消</string>
+
+    <string name="toast_saved">已保存</string>
+    <string name="toast_name_required">名字不能为空</string>
+    <string name="toast_total_invalid">总格数要大于 0</string>
+
+    <string name="sync_need_account">请先填写同步设置（地址 / 账号 / 应用密码）</string>
+    <string name="sync_ok">同步成功</string>
+    <string name="sync_uptodate">已是最新，无需上传</string>
+    <string name="sync_failed">同步失败：%1$s</string>
+    <string name="sync_in_progress">上一次同步还没结束</string>
+</resources>

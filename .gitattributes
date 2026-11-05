@@ -1,0 +1,10 @@
+# 文档约定：gradlew 必须是 LF，否则 Linux runner 会报 /bin/sh^M: bad interpreter
+# workflow 里也有 sed 兜底，但这里从源头固化，本地 clone 不会带出 CRLF
+gradlew        text eol=lf
+*.sh           text eol=lf
+*.kts          text eol=lf
+*.kt           text eol=lf
+*.xml          text eol=lf
+*.yml          text eol=lf
+*.properties   text eol=lf
+gradle-wrapper.jar binary
