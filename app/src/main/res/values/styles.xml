@@ -6,5 +6,9 @@
         <item name="android:statusBarColor">@color/paper</item>
         <item name="android:navigationBarColor">@color/paper</item>
         <item name="android:colorAccent">@color/accent</item>
+        <!-- 浅底状态栏必须声明"用深色图标"，否则系统默认给白色图标 ——
+             时间 / 信号 / 电量在浅灰底上会完全看不见。API 23+ 生效；
+             更旧设备会忽略这一项（不崩，只是图标仍是白的）。 -->
+        <item name="android:windowLightStatusBar">true</item>
     </style>
 </resources>

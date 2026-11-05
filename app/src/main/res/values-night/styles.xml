@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 深色模式连系统控件（Button / AlertDialog / EditText）一起换深色，
+         只换 colors.xml 是不够的：Button 默认背景由主题决定，否则会是深底浅按钮。 -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">@color/paper</item>
+        <item name="android:navigationBarColor">@color/paper</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <!-- 深底状态栏要浅色图标 -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

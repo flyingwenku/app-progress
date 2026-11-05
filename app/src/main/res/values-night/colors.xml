@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 系统深色模式自动选中 values-night，业务代码一行都不用改。
+         颜色沿用浅色那套的语义，只是整体压暗、文字/强调色提亮。 -->
+    <color name="paper">#121614</color>
+    <color name="card">#1E2421</color>
+    <color name="ink">#E8EDEA</color>
+    <color name="ink_secondary">#9AA39E</color>
+    <color name="accent">#6FCF9F</color>
+    <color name="launcher_bg">#1E6B4C</color>
+
+    <!-- 深底上：未走到的格子要暗下去，走过的橙与浅绿都要提亮才看得清 -->
+    <color name="progress_done">#E08755</color>
+    <color name="progress_todo">#3A423E</color>
+    <color name="progress_track">#4A534E</color>
+</resources>

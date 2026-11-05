@@ -7,4 +7,10 @@
     <color name="ink_secondary">#6B736F</color>
     <color name="accent">#2E7D5B</color>
     <color name="launcher_bg">#2E7D5B</color>
+
+    <!-- 进度绘制的三个颜色也放到资源里，values-night 才能给深色版。
+         浅色值与 Windows 端 CardWindow 一致。 -->
+    <color name="progress_done">#C05A2B</color>
+    <color name="progress_todo">#E3E0DA</color>
+    <color name="progress_track">#B9C2BE</color>
 </resources>

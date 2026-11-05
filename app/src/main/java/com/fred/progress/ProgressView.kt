@@ -2,10 +2,10 @@ package com.fred.progress
 
 import android.content.Context
 import android.graphics.Canvas
-import android.graphics.Color
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
+import androidx.core.content.ContextCompat
 import com.fred.progress.model.Bar
 
 /**
@@ -25,18 +25,20 @@ class ProgressView @JvmOverloads constructor(
     private var current = 0
     private var theme = Bar.THEME_STAIRS
 
+    // 从资源取色：系统切深色时 Activity 重建并重新 inflate，这里自然拿到 values-night 的值。
+    // 之前写死 Color.parseColor(...) 的话，深底下未走到的浅灰格子会刺眼。
     private val fill = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.parseColor("#C05A2B")
+        color = ContextCompat.getColor(context, R.color.progress_done)
     }
     private val empty = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.parseColor("#E3E0DA")
+        color = ContextCompat.getColor(context, R.color.progress_todo)
     }
     private val track = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.parseColor("#B9C2BE")
+        color = ContextCompat.getColor(context, R.color.progress_track)
         strokeWidth = 3f
     }
     private val ring = Paint(Paint.ANTI_ALIAS_FLAG).apply {
-        color = Color.parseColor("#C05A2B")
+        color = ContextCompat.getColor(context, R.color.progress_done)
         style = Paint.Style.STROKE
         strokeWidth = 3f
     }
